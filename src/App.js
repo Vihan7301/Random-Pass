@@ -10,6 +10,10 @@ function App() {
           <input tpye="text" readOnly />
           <button>Copy</button>
         </div>
+        <div className="passwordLength">
+          <label>Password Length</label>
+          <input type="number" />
+        </div>
       </div>
     </div>
   );
