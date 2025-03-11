@@ -32,14 +32,16 @@ let createPassword=()=>{
   )
   
 }
-
+let copypass=()=>{
+  navigator.clipboard.writeText(fpass)
+}
   return (
     <div className="App">
       <div className='passwordBox'>
-        <h2>Password Generator</h2>
+        <h1>Password Generator</h1>
         <div className="passwordBoxIn">
           <input tpye="text" value={fpass} readOnly />
-          <button>Copy</button>
+          <button onClick={copypass}>Copy</button>
         </div>
 
         <div className="passwordBoxex" id="passLength">
